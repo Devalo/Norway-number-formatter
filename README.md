@@ -7,7 +7,9 @@
   `npm install norway-number-formatter`
   
   `import norFormatter from 'norway-number-formatter';`
+  <br>
   or
+  <br>
   `const norFormatter = require('norway-number-formatter');`
   
   ## Usage
