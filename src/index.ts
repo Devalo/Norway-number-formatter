@@ -19,8 +19,8 @@ const phoneNumber = (phoneNumber: string): string => {
     const match = cleanedNumber.match(/^(\d{2})(\d{2})(\d{2})(\d{2})$/);
 
     if (match) {
-      const formatLandlordNumber = `${match[1]} ${match[2]} ${match[3]} ${match[4]}`;
-      return formatLandlordNumber;
+      const formatLandlineNumber = `${match[1]} ${match[2]} ${match[3]} ${match[4]}`;
+      return formatLandlineNumber;
     }
 
   }
