@@ -18,6 +18,7 @@
   `const mobileNumber = norFormatter('9999999', 'phone_number');`
   <br>
   `console.log(mobileNumber);` // 999 99 999;
+  <br>
   Landline
   <br>
   `const landline = norFormatter('33333333', 'phone_number');`
