@@ -4,6 +4,10 @@
   "description": "Small helper library for formatting norwegian phone numbers, bank account numbers and social security numbers.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Devalo/Norway-number-formatter.git"
+  },
   "scripts": {
     "test": "jest"
   },
@@ -17,6 +21,7 @@
     ],
   "author": "Stephan Valois",
   "license": "ISC",
+  "homepage": "https://github.com/Devalo/Norway-number-formatter",
   "dependencies": {
   },
   "devDependencies": {
