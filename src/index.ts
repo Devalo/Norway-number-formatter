@@ -22,7 +22,6 @@ const phoneNumber = (phoneNumber: string): string => {
       const formatLandlineNumber = `${match[1]} ${match[2]} ${match[3]} ${match[4]}`;
       return formatLandlineNumber;
     }
-
   }
   throw new Error('No matches for phone number');
 };
@@ -31,9 +30,9 @@ const bankAccount = (accountNumber: string): string => {
   const cleanedNumber = cleanup(accountNumber);
 
   if (cleanedNumber.length !== 11) throw new Error('Length of account number must be 11 digits');
-  
+
   const match = cleanedNumber.match(/^(\d{4})(\d{2})(\d{5})$/);
-  
+
   if (match) {
     const formatAccountNumber = `${match[1]} ${match[2]} ${match[3]}`;
     return formatAccountNumber;
@@ -44,14 +43,14 @@ const bankAccount = (accountNumber: string): string => {
 const socialSecNumber = (socialSecurityNumber: string): string => {
   const cleanedNumber = cleanup(socialSecurityNumber);
   if (cleanedNumber.length !== 11) throw new Error('Length of social security number must be 11 digits'); 
-  
+
   const match = cleanedNumber.match(/^(\d{6})(\d{5})$/);
-  
+
   if (match) {
     const formatSocialSecNumber = `${match[1]} ${match[2]}`;
     return formatSocialSecNumber;
   }
-  
+
   throw new Error('No matches for social security number');
 }
 
